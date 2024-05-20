@@ -1,6 +1,6 @@
 # MultiModal-SentimentAnalysis
 
-This project was developed by three third year engineering students from the University of Toronto as part of their coursework for APS360: Applied Fundamentals of Deep Learning.
+Ideation, data collection, model builing, training and finetuning was entirely developed by three third year engineering students from the University of Toronto as part of their coursework for APS360: Applied Fundamentals of Deep Learning. 
 
 ## Interpreting User Sentiment in Instagram Posts: A Multimodal Deep Learning Approach
 
@@ -10,9 +10,13 @@ This repository introduces a multimodal deep learning approach aimed at interpre
 
 ![image](https://github.com/charlottevedrines/MultiModal-SentimentAnalysis/assets/97196465/e49b547e-7c5b-44a5-8429-6a562d9bb9cd)
 
-The diagram visualizes the pipeline of the architecture, featuring a dual deep learning model that processes two inputs from Instagram posts: an image and its caption, through two distinct models. The sentiment class of the post is determined by a trainable weighted average, acting as an attention mechanism.
+The diagram visualizes the pipeline of the architecture, featuring a dual deep learning model that processes two inputs from Instagram posts: an image and its caption, through two distinct models. The sentiment class of the post is determined by a Weight Average Neural Network, acting as an attention mechanism.
 
 The [full report](Final_Report.pdf) written by all three collaborators is publicly available.
+
+## Results
+
+The Weight Average Neural Network's (WANN) improved over its constituent RNN and CNN models, achieving an accuracy of 57% against the RNN's 53% and the CNN's 40%, is interesting to analyse. This increment, while modest, does suggest that the ensemble approach of the WANN is effectively capitalising on the strengths of both models. It is important to keep in mind with these results that three sentiments where classified, positive, negative and neutral and therefore, random guess would yield an accuracy of 33% since we are dealing with a balanced dataset.
 
 ## Running the model
 
