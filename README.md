@@ -10,4 +10,12 @@ This repository introduces a multimodal deep learning approach aimed at interpre
 
 ![image](https://github.com/charlottevedrines/MultiModal-SentimentAnalysis/assets/97196465/e49b547e-7c5b-44a5-8429-6a562d9bb9cd)
 
+The diagram visualizes the pipeline of the architecture, featuring a dual deep learning model that processes two inputs from Instagram posts: an image and its caption, through two distinct models. The sentiment class of the post is determined by a trainable weighted average, acting as an attention mechanism.
+
 The [full report](Final_Report.pdf) written by all three collaborators is publicly available.
+
+## Running the model
+
+This model can be ran on CPU or GPU. The image and text model have been pretained by our team and downloaded [here](https://drive.google.com/drive/folders/1zHkLyKiJEYuhGtAWvzRjDNOG05ZUNJav?usp=drive_link). Due to the lack of open source dataset Instagram posts (including image and text) labelled with their sentiment, our team collected our own test set totalling to 240 labelled images with their corresponding captions. This custom test set
+
+A google colab has been uploaded in this repository and contains the code that uploads the pretrained models, passes them our test dataset, records the results of both models in a pandas dataframe before passing the results to the weighted average neural netowork that performs a holistic evaluation on the entire Instagram post.
