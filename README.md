@@ -8,5 +8,4 @@ This repository introduces a multimodal deep learning approach aimed at interpre
 
 ![image](https://github.com/charlottevedrines/MultiModal-SentimentAnalysis/assets/97196465/e49b547e-7c5b-44a5-8429-6a562d9bb9cd)
 
-
-[full report](Final_Report.pdf)
+The [full report](Final_Report.pdf) written by all three collaborators is publicly available.
